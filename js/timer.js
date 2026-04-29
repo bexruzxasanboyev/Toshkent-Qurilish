@@ -1,0 +1,1 @@
+let t=120,e=document.getElementById("timer"),i=setInterval(()=>{if(t<=0)return clearInterval(i);t--;e.textContent=String(Math.floor(t/60)).padStart(2,"0")+":"+String(t%60).padStart(2,"0")},1e3);
