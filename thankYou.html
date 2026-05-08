@@ -42,7 +42,9 @@ src="https://www.facebook.com/tr?id=905925909122350&ev=PageView&noscript=1"
   <script src="./js/thankYou.js" defer></script>
 <script defer>
 window.addEventListener("load", () => {
-    clarity("event", "thankyou_page_view");
+    setTimeout(() => {
+        clarity("event", "thankyou_page_view");
+    }, 500);
 });
 </script>
 </body>
