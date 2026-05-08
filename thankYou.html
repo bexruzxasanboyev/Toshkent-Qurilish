@@ -43,7 +43,9 @@ src="https://www.facebook.com/tr?id=905925909122350&ev=PageView&noscript=1"
 <script defer>
 window.addEventListener("load", () => {
     setTimeout(() => {
-        clarity("event", "thankyou_page_view");
+        if (typeof clarity === "function") {
+            clarity("event", "thankyou_page_view");
+        }
     }, 500);
 });
 </script>
